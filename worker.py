@@ -8,6 +8,7 @@ Registers:
 plus the original tools and the four mocked specialist tools as activities.
 """
 
+import os
 import asyncio
 
 from dotenv import load_dotenv
@@ -32,7 +33,7 @@ from specialist_tools import (
     verify_identity_documents,
 )
 
-TASK_QUEUE = "loan-underwriting"
+TASK_QUEUE = os.getenv("TEMPORAL_TASK_QUEUE", "loan-underwriting")
 
 
 async def main() -> None:

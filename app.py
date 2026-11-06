@@ -1,3 +1,4 @@
+import os
 import asyncio
 import random
 import re
@@ -21,7 +22,7 @@ load_dotenv()
 app = FastAPI(title="Temporal Loan Underwriting Demo")
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
-TASK_QUEUE = "loan-underwriting"
+TASK_QUEUE = os.getenv("TEMPORAL_TASK_QUEUE", "loan-underwriting")
 _client: Optional[Client] = None
 
 

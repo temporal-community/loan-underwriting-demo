@@ -28,7 +28,7 @@ from workflow import LoanUnderwritingWorkflow
  
 load_dotenv()
  
-TASK_QUEUE = "loan-underwriting"
+TASK_QUEUE = os.getenv("TEMPORAL_TASK_QUEUE", "loan-underwriting")
 SCHEDULE_ID = "loan-demo-schedule"
  
  
