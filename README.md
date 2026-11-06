@@ -1,3 +1,6 @@
+> These updates are only for AWS re:Invent 2026. Do not merge this branch into the default branch.
+> Contact Ian Douglas or Tomas Josovsky with questions.
+
 # 🏦 Temporal National Bank — AI Loan Underwriting Demo
 
 A booth demo for AWS Summit showing how [Temporal](https://temporal.io), [AWS Bedrock](https://aws.amazon.com/bedrock/), and the [Strands Agents SDK](https://strandsagents.com/) work together to build durable, human-in-the-loop AI workflows — deployable as a Temporal Serverless Worker on AWS Lambda.
